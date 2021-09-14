@@ -1,0 +1,58 @@
+body {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 45vh 45vh 10vh;
+    background-image: url(./img/background3.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+#imgLogo {
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+    top: -12%;
+    
+}
+
+#searchDiv {
+    text-align: center;
+}
+
+#buttonSearch{
+    margin-top: 60%;
+}
+
+#searchBar {
+    width: 100%;
+    margin-top: 20%;
+    height: 10%;
+    width: 99%;
+}
+
+img {
+    max-width: 75%;
+    max-height: 75%;
+    position: relative;
+    left: -10%;
+}
+
+#buttonConnexion {
+    text-align: right;
+}
+
+footer {
+    grid-column: 1/4;
+    padding-top: 4%;
+    
+
+}
+
+#footerDiv {
+    text-align: center;
+    background-color: #BEC23999;
+}
+    
+#rechercher {
+    height: 25%;
+}
