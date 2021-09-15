@@ -61,7 +61,7 @@ Il a été racheté en 2007 par le groupe Parques Reunidos.", "Holme-Olstrup , 
  Créé en 1935, Meli Park est fondé par un fabricant de miel, Alberic-Joseph Florizoone. 
  Le thème du parc est alors les abeilles et le monde de l'apiculture. Dans les années 1990, le parc perd son image et les visiteurs le boudent peu à peu. 
  La famille Florizoone décide de vendre en 1999 à Studio 100." , "Adinkerque , Belgique", "https://www.plopsalanddepanne.be/fr"),
-("Holy Land Experience", "Amerique du Nord", "Changement d’époque", "imagesParks/HolyLandExperience.jpg",
+("Holy Land Experience", "Amerique du Nord", "changement d'époque", "imagesParks/HolyLandExperience.jpg",
  "Attendez-vous à être inspiré », c’est le slogan ambitieux du Holy Land à Orlando, un parc d’attractions ayant pour thème l’Ancien et le Nouveau Testament.
   Un retour 2000 ans en arrière dans un Jérusalem en miniature, avec des manuscrits précieux et des attractions dans un décor de temples et des cavernes plus vrais que nature. 
   Entre promenade spirituelle engagée et expérience biblique originale, Holy Land souhaite « illuminer le véritable sens de votre vie ». La messe est dite…",
@@ -83,7 +83,7 @@ Il a été racheté en 2007 par le groupe Parques Reunidos.", "Holme-Olstrup , 
 	Toutefois, il y a une chose qui est formellement interdite à Erotikaland et c'est de faire l'amour sur les lieux,
 	Ceux et celles qui seraient tentés de se laisser aller à leurs pulsions devront donc prévoir une chambre d'hôtel à proximité!", 
 	" Sao Paulo, Brésil", "https://royaume-de-licorne.fr/"),
-	("La belle époque" , "Europe", "Changement d’époque", "imagesParks/LaBelleEpoque.jpg",
+	("La belle époque" , "Europe", "changement d'époque", "imagesParks/LaBelleEpoque.jpg",
 	"Situé au Parc des Arènes de Cimiez à Nice, le Parc d'attractions, la BELLE ÉPOQUE vous invite à faire un saut dans le temps en famille ! 
 	Découvrez des manèges tout droit sortis des années 30, rénovés et remis au goût du jour. 
 	Mais attention, ces magnifiques manèges  demandent la participation des parents pour fonctionner. Un vrai moment de partage avec vos enfants !
