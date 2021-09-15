@@ -35,6 +35,10 @@ setTimeout(() => {
 } ,APPARITION_DELAY)
 setInterval(changetext,CHANGE_DELAY);
 
-
+let about = document.getElementById("about")
+let time = new Date()
+about.addEventListener("click",() => {
+    alert(`Vous avez un nouveau... virus\n Aujourd'hui à ${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}`)
+});
 
 
