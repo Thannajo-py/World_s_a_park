@@ -66,3 +66,22 @@ button {
     background-color: #BEC23999;
 }
 
+#slider {
+    font-size:x-large;
+    font-style: italic;
+    background-color: #FFFFFFBB;
+}
+.slider{
+    text-align: center;
+    padding-top: 25%;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
