@@ -41,9 +41,10 @@ app.use(express.static(path.join(__dirname, '/public')))
         const id = req.params.id
         let query = `SELECT * FROM parks WHERE id = ${id};`;
         connection.query(query, (err, result) => {
-            if (err) throw err; 
-            console.log(result)
-            res.render("parcs.ejs",{park:result[0]})
+            if (err || result[0] == undefined){
+                res.sendFile('../public/main.html');
+            }
+            else{res.render("parcs.ejs",{park:result[0]})}
             
 
     })
