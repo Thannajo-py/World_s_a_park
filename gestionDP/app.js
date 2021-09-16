@@ -1,18 +1,18 @@
 const path = require("path");
 const express = require('express');
 const app = express();
-const server = require('http').createServer(app);
-const io = require('socket.io')(server);
-const bodyParser = require("body-parser");
+
 
 const mysql = require('mysql');
-const { createSecureServer } = require("http2");
+
 const connection = mysql.createConnection({
-  host : 'localhost',
-  user : 'root',
-  password : 'root',
-  database : 'park'
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'worldapark'
 });
+app.set("view engine","ejs")
+app.set("views",path.join(__dirname,"./views"))
 
 //connection.connect();
 connection.connect(function(err){
@@ -29,11 +29,23 @@ app.use(express.static(path.join(__dirname, '/public')))
     })
     .post('/search', (req, res) => {
         const result = req.body.searchBar;
-        let query = `SELECT * FROM parks WHERE continent = "${result}";`;
+        let query = `SELECT * FROM parks WHERE continent LIKE '%${result}%';`;
         connection.query(query, (err, result) => {
             if (err) throw err; 
+            res.render("search.ejs",{park:result})
             
-             console.log(result) ;
+
+    })})
+    .get('/park/:id', (req, res) => {
+        console.log(req.params)
+        const id = req.params.id
+        let query = `SELECT * FROM parks WHERE id = ${id};`;
+        connection.query(query, (err, result) => {
+            if (err) throw err; 
+            console.log(result)
+            res.render("parcs.ejs",{park:result[0]})
+            
+
     })
     
     
@@ -41,5 +53,4 @@ app.use(express.static(path.join(__dirname, '/public')))
     
 });
 
-
-server.listen(8080);
+app.listen(8080);

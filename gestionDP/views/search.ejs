@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./recherche.css">
+    <title>Résultat de recherche</title>
+</head>
+<body>
+    <div id ="imgLogo">
+        <div id="divDivImg">
+            <a href="./main.html">
+                <img src="./img/worldsAParkTransparent.png" alt="imgLogo">
+            </a>
+        </div>
+    </div>    
+
+    <div id="buttonConnexion">
+        <a href="connexion.html"><button id="connexion">Connexion</button></a>
+    </div>
+
+    <div id="empty"></div><!-- Espace vide -->
+
+    <form id="searchDiv" action="/search" method="POST">
+        <input type="text" name="searchBar" id="searchBar" placeholder="Saisir mot-clé">
+    
+        <button id="rechercher" type="submit">Rechercher</button>
+    </form>
+    <div>
+        <% park.forEach( element => {%>
+            <a href="/park/<%=element.id %>">
+            <div class="card">
+                <div class="imageCard">
+                    <img src="<%= element.photo %>" alt="testImage">
+                </div>
+                <div class="positionCard">
+                    <div class="nameCard">
+                        <a class="parkLink" href="">
+                            <h2><%= element.nom %></h2>
+                        </a>
+                    </div>
+                    <div class="descriptionCard">
+                        <p><%= `${element.descriptif.substring(0,50)}...` %></p>
+                    </div>
+                    <div class="localisationCard">
+                        <p><%= element.continent %></p>
+                    </div>           
+                </div>
+            </div>
+        </a>
+
+        <%}) %>
+        
+</div>
+    <footer>
+        <div id="footerDiv">
+            <a href="contact.html">Contact</a>
+            <a href="mentionLegales.html">Mentions légales</a>
+            <a id="about" href="">À propos</a>            
+        </div>
+    </footer>
+    
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script>    
+    let socket = io();
+    socket.on('search', parks =>{       
+       console.log(parks)
+    })
+    
+
+</script>
+</html>

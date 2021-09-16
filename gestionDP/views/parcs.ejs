@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../parc.css">
+    <link rel="icon" href="../img/worldsAParkTransparent.png" type="image/x-icon">
+    <title>World's A park</title>
+</head>
+<body>
+
+    <div id ="imgLogo">
+        <div id="divDivImg">
+            <a href="./main.html">
+                <img src="../img/worldsAParkTransparent.png" alt="imgLogo">
+            </a>
+        </div>
+    </div>
+
+
+    <div id="buttonConnexion">
+        <a href="connexion.html"><button id="connexion">Connexion</button></a>
+    </div>
+
+    <div class="parc">
+
+        <div class="description">
+            <h2><%= park.nom %></h2>
+            <p><%= park.descriptif%></p>
+        </div>
+
+        <div class="categorie">
+            <img src="../<%= park.photo %>" alt="imgCategories">
+        </div>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9375.647668110027!2d24.0798364!3d54.0220866!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x745224b235c1361a!2sParc%20Gr%C5%ABtas!5e0!3m2!1sfr!2sfr!4v1631715720222!5m2!1sfr!2sfr" width="50%"   allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="notes">
+            <p>C'était vraiment très interessant!</p>
+        </div>
+    </div>
+
+
+    <footer>
+        <div id="footerDiv">
+            <a href="contact.html">Contact</a>
+            <a href="mentionLegales.html">Mentions légales</a>
+            <a id="about" href="">À propos</a>
+        </div>
+    </footer>
+    
+</body>
+</html>
