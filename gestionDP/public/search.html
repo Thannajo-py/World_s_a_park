@@ -14,7 +14,8 @@
                 <img src="./img/worldsAParkTransparent.png" alt="imgLogo">
             </a>
         </div>
-    </div>    
+    </div>
+
 
     <div id="buttonConnexion">
         <a href="connexion.html"><button id="connexion">Connexion</button></a>
@@ -43,25 +44,16 @@
             </div>
             <div class="localisationCard">
                 <p>Ile de Jeju, Corée du Sud</p>
-            </div>           
+            </div>
         </div>
     </div>
     <footer>
         <div id="footerDiv">
             <a href="contact.html">Contact</a>
             <a href="mentionLegales.html">Mentions légales</a>
-            <a id="about" href="">À propos</a>            
+            <a id="about" href="">À propos</a>
         </div>
     </footer>
     
 </body>
-<script src="/socket.io/socket.io.js"></script>
-<script>    
-    let socket = io();
-    socket.on('search', parks =>{       
-       console.log(parks)
-    })
-    
-
-</script>
 </html>

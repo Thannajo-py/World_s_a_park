@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./recherche.css">
+    <link rel="icon" href="../img/worldsAParkTransparent.png" type="image/x-icon">
     <title>Résultat de recherche</title>
 </head>
 <body>
@@ -27,8 +28,8 @@
     
         <button id="rechercher" type="submit">Rechercher</button>
     </form>
-    <div>
-        <% park.forEach( element => {%>
+    <div id="searchList">
+        <% park.forEach( element => { %>
             <a href="/park/<%=element.id %>">
             <div class="card">
                 <div class="imageCard">
@@ -36,9 +37,7 @@
                 </div>
                 <div class="positionCard">
                     <div class="nameCard">
-                        <a class="parkLink" href="">
-                            <h2><%= element.nom %></h2>
-                        </a>
+                        <h2><%= element.nom %></h2>
                     </div>
                     <div class="descriptionCard">
                         <p><%= `${element.descriptif.substring(0,50)}...` %></p>
@@ -52,7 +51,7 @@
 
         <%}) %>
         
-</div>
+
     <footer>
         <div id="footerDiv">
             <a href="contact.html">Contact</a>
@@ -60,15 +59,7 @@
             <a id="about" href="">À propos</a>            
         </div>
     </footer>
+</div>
     
 </body>
-<script src="/socket.io/socket.io.js"></script>
-<script>    
-    let socket = io();
-    socket.on('search', parks =>{       
-       console.log(parks)
-    })
-    
-
-</script>
 </html>
