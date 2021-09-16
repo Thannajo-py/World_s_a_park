@@ -44,8 +44,8 @@
                         </tr>
                         <tr>
                             <td
-                            colspan="2"><div id="button"><button type="submit">Se connecter</button>
-                            <a href="">mot de passe oublié</a>
+                            colspan="2"><div id="button"><button id="connect_tp" type="submit">Se connecter</button>
+                            <a id="not_working">mot de passe oublié</a>
                             
                         </div></td>
                         
@@ -75,4 +75,15 @@
     </form>
 </body>
 <script src="slider.js"></script>
+<script>
+    const btn_connexion = document.getElementById("connect_tp");
+    const not_working = document.getElementById("not_working");
+    btn_connexion.addEventListener("click", (event) => {
+        event.preventDefault();
+        alert("Vous connaissez des gens");
+    })
+    not_working.addEventListener("click", () => {
+        alert("ne sert qu'à faire jolie!")
+    })
+</script>
 </html>

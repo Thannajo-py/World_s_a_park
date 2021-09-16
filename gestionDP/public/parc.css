@@ -6,7 +6,7 @@ html, body{
 body {
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 25vh 65vh  10vh;
+    grid-template-rows: 25vh 1fr  10%;
     background-image: url(./img/background3.jpg);
     background-size: cover;
     background-position: bottom;
@@ -38,9 +38,9 @@ img {
 }
 
 footer {
-    grid-column: 1/4;
-    grid-row: 5;
-    padding-top: 4%;
+    width:200%;
+    margin-left: -50%;
+    padding-top: 50%;
     
 
 }
@@ -90,6 +90,7 @@ a:hover{
 
 .map{
     grid-row: 3;
+    padding-top: 10%;
 }
 .notes{
     grid-row: 4;

@@ -29,4 +29,8 @@ btn.addEventListener("click", event =>{
         event.preventDefault();
         alert("not a valid mail adress")
     }
+    else{
+        event.preventDefault();
+        alert("Ce service est momentanément indisponible... réessayez... jamais")
+    }
 })
