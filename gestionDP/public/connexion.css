@@ -1,0 +1,22 @@
+form{
+    display: flex;
+    flex-direction: column;
+}
+#searchDiv{
+    grid-row: 2;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+}
+
+td a {
+    color:blue;
+}
+td a:visited{
+    color:purple;
+}
+
+#button{
+    display:flex;
+    justify-content: space-evenly;
+}
