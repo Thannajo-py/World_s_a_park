@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/worldsAParkTransparent.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="connexion.css">
+    <link rel="stylesheet" href="comptePage.css">
     <title>Connexion</title>
 </head>
 <body>
@@ -20,15 +20,10 @@
             </div>
         </div>
     
-        <div class="slider">
-            <p id="slider"></p>
-        </div> 
     
-        <div id="buttonConnexion">
-            <a href="connexion.html"><button id="connexion">Connexion</button></a>
-        </div>
-    
-        <div id="empty"></div><!-- Espace vide -->
+        
+        
+
     
         <div id="searchDiv">
             <form>
@@ -36,31 +31,39 @@
                     <tbody>
                         <tr>
                             <td><label for="login">Login: </label></td>
-                            <td><input name="login" id="login" type="text" />   </td>
+                            <td><input name="login" id="login" type="text" required/>   </td>
                         </tr>
+
+                        <tr>
+                            <td><label for="email">Email: </label></td>
+                            <td><input name="email" id="email" type="email" required/></td>
+                        </tr>
+
                         <tr>
                             <td><label for="pwd">Password: </label></td>
-                            <td><input name="pwd" id="pwd" type="password" /></td>
+                            <td><input name="pwd" id="pwd" type="password" required/></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><label for="pwdConfirm"> Confirlmation mot de passe </label></td>
+                            <td><input name="pwdConfirm" id="pwdConfirm" type="password" required/></td>
                         </tr>
                         <tr>
-                            <td
-                            colspan="2"><div id="button"><button type="submit">Se connecter</button>
-                            <a href="">mot de passe oublié</a>
+                            <td colspan="2"><div id="button"><button type="submit">Créer un compte</button>
+                            
                             
                         </div></td>
                         
                         </tr>
-                        <tr>
-                            <td></td>
-                            <td>
-                                <a href="pageConnexion.html">S'inscrire</a>
-                            </td>
-                        </tr>
+
                     </tbody>
                 </table>
             </form>
 
         </div>
+
+
+        <div id="empty"></div><!-- Espace vide -->
     
         <footer>
             <div id="footerDiv">
@@ -74,5 +77,5 @@
 
     </form>
 </body>
-<script src="slider.js"></script>
+<script src="createAccount.js"></script>
 </html>

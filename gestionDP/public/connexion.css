@@ -20,3 +20,7 @@ td a:visited{
     display:flex;
     justify-content: space-evenly;
 }
+
+tbody > tr:last-of-type > td:last-of-type{
+    text-align: center;
+}
