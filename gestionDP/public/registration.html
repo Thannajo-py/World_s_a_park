@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    
+  </head>
+  <body>
+    <h1>Inscription</h1>
+    <form action="/addUser" method="POST">
+        <div>
+            <label for="pseudo">Pseudo :</label>
+            <input type="text" id="pseudo" name="pseudo" placeholder="Votre pseudo" required autofocus />
+        </div>
+        <div>
+            <label for="pwd">Mot de passe :</label>
+            <input type="password" id="pwd" name="pwd" placeholder="Votre mot de passe" required />
+        </div>
+        <div>
+            <label for="confirmPwd">Confirmation du mot de passe :</label>
+            <input type="password" id="confirmPwd" name="confirmPwd" placeholder="Confirmer votre mot de passe" required />
+        </div>
+        <input type="submit" />
+    </form>
+    <a href="/"><button>Aller à la page de connexion</button></a>
+    <script>
+        const pwdInput = document.querySelector("#pwd");
+        const confirmPwdInput = document.querySelector("#confirmPwd");
+        document.querySelector("form").addEventListener("submit", e => {
+            if (pwdInput.value !== confirmPwdInput.value) {
+                e.preventDefault();
+                alert("Le mot de passe et sa confirmation doivent être identiques !");
+            }
+        });
+    </script>
+  </body>
+</html>
