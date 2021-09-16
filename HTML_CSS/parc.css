@@ -1,0 +1,95 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 25vh 65vh  10vh;
+    background-image: url(./img/background3.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+#imgLogo {
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+    top: -12%;
+    
+}
+
+
+
+
+img {
+    max-width: 75%;
+    max-height: 75%;
+    position: relative;
+    left: -10%;
+}
+
+#buttonConnexion {
+    text-align: right;
+    grid-column: 3;
+
+}
+
+footer {
+    grid-column: 1/4;
+    grid-row: 5;
+    padding-top: 4%;
+    
+
+}
+
+#footerDiv {
+    text-align: center;
+    background-color: #BEC23999;
+}
+    
+button {
+    background-color: #BEC23999;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.parc {
+    grid-column: 2;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 1fr  ;
+    grid-row: 1;
+}
+
+.description{
+    grid-row: 1;
+}
+
+.categorie{
+    grid-row: 2;
+    padding-left: 15%;
+    position: relative;
+    margin-bottom: -15%;
+}
+
+.categorie img{
+    max-width: 60%;
+    max-height: 60%;
+}
+
+.map{
+    grid-row: 3;
+}
+.notes{
+    grid-row: 4;
+}
